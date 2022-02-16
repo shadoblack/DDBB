@@ -774,31 +774,8 @@ connection.query(sql, (err,result)=>{
     }
 });
 
-//reto3
 
-//eliminar de la base de datos todas las notas cuya fecha tenga mas de 10 años
 
-sql="DELETE FROM codenotch_2.marks WHERE date < '2012-06-15'";
-
-connection.query(sql, (err,result)=>{
-    if(err){
-        console.log(err);
-    }else{
-        console.log("datos eliminados");
-        console.log(result);
-    }
-});
-
-sql="UPDATE codenotch_2.marks SET mark = '5' WHERE mark >'5'  ";
-
-connection.query(sql, (err,result)=>{
-    if(err){
-        console.log(err);
-    }else{
-        console.log("datos modificados");
-        console.log(result);
-    }
-});
 
 
 
